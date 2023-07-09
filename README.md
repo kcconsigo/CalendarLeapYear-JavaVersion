@@ -1,5 +1,5 @@
 # CalendarLeapYear-JavaVersion
-Developed Java version for Calendar Leap Year program as it have already Python version
+Developed Java version for Calendar Leap Year program as it has already Python version
 
 To check the LeapYear
 
