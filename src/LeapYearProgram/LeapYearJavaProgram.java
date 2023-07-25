@@ -31,7 +31,6 @@ public class LeapYearJavaProgram {
 		
 		Scanner reader = new Scanner(System.in);
 
-
 		while(true) {
 			try {
 				System.out.println("\nType a year: ");
