@@ -56,7 +56,7 @@ public class LeapYearJavaProgram {
 					break;
 				}
 
-			}catch (InputMismatchException e) {
+			}catch (InputMismatchException e) { //will update this catch to display the error message prior user's technically invalid data input
 				System.out.println("\nType a year: ");
 				reader.nextInt();
 				System.out.println("\nType a month: ");
