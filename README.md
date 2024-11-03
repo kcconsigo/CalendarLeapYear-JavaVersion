@@ -9,7 +9,7 @@ Create a method/function that will identify/return the end month date with a giv
 
 Example Data: 13-Oct-2022 (follow the exact format, not 13-October-2022 nor 13-10-2022)
 
-Expected Return: 31 (last day of October in year 2022)
+Expected Return: 31 (last day of October in year 2022, not a leap year)
 
 Example Data 2: 01-Feb-2019
 
