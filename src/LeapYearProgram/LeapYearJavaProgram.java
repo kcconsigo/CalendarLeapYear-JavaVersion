@@ -1,6 +1,3 @@
-package LeapYearProgram;
-
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -27,16 +24,19 @@ public class LeapYearJavaProgram {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub		
-		
+		// TODO Auto-generated method stub
+
 		Scanner reader = new Scanner(System.in);
+		int year = 0;
+		int month = 0;
+
 
 		while(true) {
 			try {
 				System.out.println("\nType a year: ");
-				int year = reader.nextInt();
+				year = reader.nextInt();
 				System.out.println("\nType a month: ");
-				int month = reader.nextInt();
+				month = reader.nextInt();
 
 				int days = daysinMonth(year,month);
 
@@ -50,24 +50,26 @@ public class LeapYearJavaProgram {
 					System.out.print("\nIt is not Leap Year");
 				}
 
-				if(year == 2020 && month == 2) {
-					System.out.println("\nYou entered: "+year);
-					System.out.println("\nYou entered: "+month); 
-					break;
-				}
 
-			}catch (InputMismatchException e) { //will update this catch to display the error message prior user's technically invalid data input
-				System.out.println("\nType a year: ");
-				reader.nextInt();
-				System.out.println("\nType a month: ");
-				reader.nextInt();
+			}catch (InputMismatchException | ArrayIndexOutOfBoundsException e) {
+				System.out.println("\nType a year: " +e.toString());
+				System.out.println("Pease Enter Valid Year");
+				reader.next();
+				System.out.println("\nType a month: " +e.toString());
+				System.out.println("Pease Enter Valid Months[1-12]");
+				reader.next();
 				continue;
 
 			}
-
+			if(year == 2020 && month == 2) {
+				System.out.println("\nYou entered: "+year);
+				System.out.println("You entered: "+month);
+				System.out.println("You met the last exact year and month of last data");
+				break;
+			}
+			else {
+				System.out.println("\nIt's not done yet, you still haven't provided yet the exact year and month of last data");
+			}
 		}
-
-
 	}
-
 }
