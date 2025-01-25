@@ -55,10 +55,10 @@ public class LeapYearJavaProgram {
 
 			}catch (InputMismatchException | ArrayIndexOutOfBoundsException e) {
 				System.out.println("\nType a year: " +e.toString());
-				System.out.println("Pease Enter Valid Year");
+				System.out.println("Please Enter Valid Year");
 				reader.next();
 				System.out.println("\nType a month: " +e.toString());
-				System.out.println("Pease Enter Valid Months[1-12]");
+				System.out.println("Please Enter Valid Months[1-12]");
 				reader.next();
 				continue;
 
