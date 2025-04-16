@@ -19,6 +19,6 @@ Example Data 3: 01-Feb-2020
 
 Expected Return: 29 (last day of February in year 2020, a leap year)
 
-******The program will be terminated once user enters last data to be inputed (Expected Return: 29 (last day of February in year 2020, a leap year)******
+******The program will be terminated once user enters last data to be entered (Expected Return: 29 (last day of February in year 2020, a leap year)******
 
 References : https://www.youtube.com/watch?v=rpSh3_QjrjU
