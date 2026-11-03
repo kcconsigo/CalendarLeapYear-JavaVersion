@@ -1,6 +1,5 @@
 package LeapYearProgram;
 
-import java.time.LocalDate;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -30,8 +29,8 @@ public class LeapYearJavaProgram {
 		// TODO Auto-generated method stub
 
 		try (Scanner reader = new Scanner(System.in)) {
-			int year = 0;
-			int month = 0;
+			int year;
+			int month;
 
 
 			while(true) {
@@ -42,10 +41,9 @@ public class LeapYearJavaProgram {
 					month = reader.nextInt();
 
 					int days = daysinMonth(year,month);
+					
 
 					System.out.print(days);
-
-
 					if (isLeapYear(year)) {
 						System.out.print("\nIt is Leap Year");
 					}
@@ -59,7 +57,7 @@ public class LeapYearJavaProgram {
 					System.out.println("Please Enter Valid Year");
 					reader.next();
 					System.out.println("\nType a month: " +e.toString());
-					System.out.println("Please Enter Valid Months[1-12]");
+					System.out.println("Please Enter Valid Months within the valid ranges[1-12]");
 					reader.next();
 					continue;
 
